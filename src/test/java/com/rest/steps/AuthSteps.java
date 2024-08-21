@@ -20,7 +20,6 @@ public class AuthSteps {
     public void theUserWantsToAuthenticate() {
         OnStage.setTheStage(Cast.whereEveryoneCan(actor -> {}));
         user = OnStage.theActorCalled("User");
-        System.out.println("Initialized user: " + user); // Debug statement
     }
 
     @When("the user sends valid credentials")
@@ -32,7 +31,6 @@ public class AuthSteps {
     @Then("the user should receive a valid token")
     public void theUserShouldReceiveAValidToken() {
         String token = user.recall("token");
-        System.out.println("Retrieved token: " + token); // Debug statement
         assertThat(token, notNullValue());
     }
 }

@@ -20,4 +20,5 @@ public class Constants {
 
     public static final String BASE_URL = properties.getProperty("restapi.baseurl");
     public static final String CREATE_TOKEN_ENDPOINT = "/auth";
+    public static final String BOOKING_ENDPOINT = "/booking";
 }

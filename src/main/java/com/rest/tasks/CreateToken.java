@@ -41,7 +41,6 @@ public class CreateToken implements Task {
                 .extract()
                 .path("token");
 
-        System.out.println("Generated token: " + token);
         actor.remember("token", token);
     }
 }
