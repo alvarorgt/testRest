@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "com.rest.steps",
-        tags = "@CreateBooking"
+        tags = "@CreateBookingAndGet"
 )
 public class TestRunner {
 }

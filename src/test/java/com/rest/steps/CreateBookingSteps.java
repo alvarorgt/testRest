@@ -40,6 +40,8 @@ public class CreateBookingSteps {
                     details.get("additionalneeds")
             );
             user.attemptsTo(CreateBooking.withDetails(booking));
+            int bookingId = user.recall("bookingId");
+            user.remember("bookingId", bookingId);
         }
     }
 
