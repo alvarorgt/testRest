@@ -16,12 +16,25 @@
         <!-- Dependency versions -->
         <cucumber.version>7.0.0</cucumber.version>
         <rest-assured.version>4.4.0</rest-assured.version>
-        <lombok.version>1.18.28</lombok.version>
+        <lombok.version>1.18.30</lombok.version>
         <serenity.version>3.2.0</serenity.version>
         <surefire.version>3.0.0-M5</surefire.version>
+        <spring-boot.version>3.1.4</spring-boot.version>
     </properties>
 
     <dependencies>
+        <!-- Spring Boot dependencies -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <version>${spring-boot.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <version>${spring-boot.version}</version>
+            <scope>test</scope>
+        </dependency>
         <!-- Cucumber dependencies -->
         <dependency>
             <groupId>io.cucumber</groupId>
