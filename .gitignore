@@ -11,6 +11,9 @@ target/
 *.iws
 *.iml
 *.ipr
+out/
+target/
+*.class
 
 ### Eclipse ###
 .apt_generated
@@ -36,3 +39,19 @@ build/
 
 ### Mac OS ###
 .DS_Store
+Thumbs.db
+*.log
+
+*.jar
+*.war
+*.ear
+reports/
+test-output/
+coverage/
+jacoco/
+surefire-reports/
+failsafe-reports/
+
+*.swp
+*.swo
+*~
